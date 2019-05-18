@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "core-js": "3.0.1",
+    "vue": "2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "3.7.0",
+    "@vue/cli-plugin-eslint": "3.7.0",
+    "@vue/cli-service": "3.7.0",
+    "babel-eslint": "10.0.1",
+    "eslint": "5.16.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-compat": "3.1.1",
+    "eslint-plugin-import": "2.17.2",
+    "eslint-plugin-node": "9.0.1",
+    "eslint-plugin-promise": "4.1.1",
+    "eslint-plugin-standard": "4.0.0",
+    "eslint-plugin-vue": "5.2.2",
+    "vue-template-compiler": "2.6.10"
+  },
+  "name": "@shuunen/contacto",
+  "private": true,
+  "scripts": {
+    "build": "vue-cli-service build",
+    "dev": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "update": "npx npm-check-updates -u"
+  },
+  "version": "0.1.0"
+}
