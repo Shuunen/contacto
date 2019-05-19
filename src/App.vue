@@ -2,18 +2,21 @@
   <div id="app">
     <Header/>
     <FileLoader/>
+    <TableEditor />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import FileLoader from './components/FileLoader.vue'
+import TableEditor from './components/TableEditor.vue'
 
 export default {
   name: 'app',
   components: {
     FileLoader,
-    Header
+    Header,
+    TableEditor
   }
 }
 </script>
