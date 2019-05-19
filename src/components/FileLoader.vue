@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import eventBus from '../event-bus'
+
 export default {
   data () {
     return {
@@ -15,9 +17,8 @@ export default {
   methods: {
     loadTextFile (file) {
       var reader = new FileReader()
-      reader.onload = event => {
-        console.log('file content :', event.target.result)
-      }
+      console.log('reading file', file)
+      reader.onload = event => eventBus.$emit('file-read', { name: file.name, content: event.target.result })
       reader.readAsText(file)
     },
     selectFile () {
