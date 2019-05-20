@@ -49,4 +49,10 @@ button {
   margin: 1rem;
   cursor: pointer;
 }
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 </style>

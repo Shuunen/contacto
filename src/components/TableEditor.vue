@@ -2,9 +2,24 @@
   <div class="table-editor col">
     <p v-if="fileLoaded">Editing file : {{ fileLoaded.name }}</p>
     <table class="table">
+      <thead>
+        <tr>
+          <th style="width:100px">
+            <div class="ellipsis">Name</div>
+          </th>
+          <th v-for="column in columns" :key="column">
+            <div class="ellipsis">{{ column }}</div>
+          </th>
+        </tr>
+      </thead>
       <tbody>
-        <tr v-for="(line, index) in lines" :key="index">
-          <td>{{ line.Name }}</td>
+        <tr v-for="(line, index) in lines" :key="'line-'+index">
+          <td>
+            <div class="name ellipsis">{{ line.Name }}</div>
+          </td>
+          <td v-for="column in columns" :key="column">
+            <input class="input" v-model="line[column]" />
+          </td>
         </tr>
       </tbody>
     </table>
@@ -19,6 +34,7 @@ import eventBus from '../event-bus'
 export default {
   data () {
     return {
+      columns: ['Given Name', 'Family Name', 'Nickname', 'Birthday'],
       fileLoaded: null,
       lines: []
     }
@@ -36,12 +52,10 @@ export default {
         .then(data => this.onFileLoaded(data))
         .catch(() => console.log('table : no previousky saved file found'))
     },
-    onFileLoaded (file) {
+    async onFileLoaded (file) {
       this.fileLoaded = file
-      csv
-        .parse(file.content)
-        .then(lines => (this.lines = lines))
-        .catch(e => console.log(e))
+      this.lines = await csv.parse(file.content)
+      // console.log('table : line', this.lines)
     }
   }
 }
@@ -53,6 +67,9 @@ export default {
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .table tbody > tr:last-child > td {
@@ -89,5 +106,13 @@ export default {
 
 .table tr:nth-child(2n-1) td {
   background-color: #f2f2f2;
+}
+
+.name {
+  text-align: left;
+}
+
+.input {
+  width: 100%;
 }
 </style>
