@@ -26,13 +26,14 @@
 </template>
 
 <script>
+import pkg from '../../package.json'
 import * as csv from '../csv'
 import eventBus from '../event-bus'
 
 export default {
   data () {
     return {
-      columns: ['Given Name', 'Family Name', 'Nickname', 'Birthday'],
+      columns: pkg.config.columns,
       lines: []
     }
   },

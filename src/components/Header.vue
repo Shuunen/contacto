@@ -1,15 +1,30 @@
 <template>
   <div class="header line margin-bottom">
-      <img  class="header--logo margin-right" alt="contacto logo" height="64" width="64" src="../assets/icons8-clean-64.png">
-      <div class="col">
-        <h1 class="header--title">Contacto</h1>
-        <h2 class="header--subtitle">Contact cleaning made easy</h2>
-      </div>
+    <img
+      class="header--logo margin-right"
+      alt="contacto logo"
+      height="64"
+      width="64"
+      src="../assets/icons8-clean-64.png"
+    >
+    <div class="col">
+      <h1 class="header--title">{{ title }}</h1>
+      <h2 class="header--subtitle">{{ description }}</h2>
+    </div>
   </div>
 </template>
 
 <script>
-export default {}
+import pkg from '../../package.json'
+
+export default {
+  data () {
+    return {
+      title: pkg.displayName,
+      description: pkg.description
+    }
+  }
+}
 </script>
 
 <style>

@@ -1,9 +1,18 @@
 {
+  "config": {
+    "columns": [
+      "Given Name",
+      "Family Name",
+      "Nickname",
+      "Birthday"
+    ]
+  },
   "dependencies": {
     "core-js": "3.0.1",
     "fast-csv": "2.5.0",
     "vue": "2.6.10"
   },
+  "description": "Contact cleaning made easy",
   "devDependencies": {
     "@vue/cli-plugin-babel": "3.7.0",
     "@vue/cli-plugin-eslint": "3.7.0",
@@ -19,6 +28,7 @@
     "eslint-plugin-vue": "5.2.2",
     "vue-template-compiler": "2.6.10"
   },
+  "displayName": "Contacto",
   "name": "@shuunen/contacto",
   "private": true,
   "scripts": {
