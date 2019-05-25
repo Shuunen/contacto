@@ -17,7 +17,7 @@
             <div class="name ellipsis">{{ line.Name }}</div>
           </td>
           <td v-for="column in columns" :key="column">
-            <input class="input" v-model="line[column]">
+            <input v-model="line[column]" class="input">
           </td>
         </tr>
       </tbody>

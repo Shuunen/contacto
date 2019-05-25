@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div class="line margin-bottom">
-      <Header/>
-      <FileHandler class="push-right"/>
+      <Header />
+      <FileHandler class="push-right" />
     </div>
-    <TableEditor/>
+    <TableEditor />
   </div>
 </template>
 
@@ -16,7 +16,7 @@ import * as storage from './storage'
 import eventBus from './event-bus'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     FileHandler,
     Header,

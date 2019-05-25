@@ -1,7 +1,7 @@
 <template>
   <div class="line">
-    <p class="margin-right font-size color" v-if="fileLoaded">Editing file : {{ fileLoaded.name }}</p>
-    <input class="hidden" type="file" ref="input" @change="onFileSelection" accept=".csv">
+    <p v-if="fileLoaded" class="margin-right font-size color">Editing file : {{ fileLoaded.name }}</p>
+    <input ref="input" class="hidden" type="file" accept=".csv" @change="onFileSelection">
     <button class="button margin-right" @click="selectFile">Open file</button>
     <button class="button" @click="exportFile">Export data</button>
   </div>

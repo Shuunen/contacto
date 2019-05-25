@@ -1,4 +1,6 @@
 {
+  "author": "Romain Racamier-Lafon <romain.racamier@gmail.com>",
+  "bugs": "https://github.com/Shuunen/contacto/issues",
   "config": {
     "columns": [
       "Given Name",
@@ -29,8 +31,21 @@
     "vue-template-compiler": "2.6.10"
   },
   "displayName": "Contacto",
+  "homepage": "https://github.com/Shuunen/contacto",
+  "keywords": [
+    "vue",
+    "google",
+    "contacts",
+    "manager",
+    "cleaner",
+    "editor"
+  ],
+  "license": "GPL-3.0",
   "name": "@shuunen/contacto",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shuunen/contacto.git"
+  },
   "scripts": {
     "build": "vue-cli-service build",
     "dev": "vue-cli-service serve",
