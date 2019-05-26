@@ -50,6 +50,7 @@
     "build": "vue-cli-service build",
     "dev": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
+    "test": "vue-cli-service lint",
     "update": "npx npm-check-updates -u"
   },
   "version": "0.1.0"
