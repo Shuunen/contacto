@@ -6,17 +6,12 @@ const baseKey = `${pkg.name}${separator}${pkg.version}`
 
 export async function get (key) {
   const fullKey = baseKey + separator + key
-  let data = localStorage[fullKey]
-  if (!data) {
-    const message = `storage : found no matching key "${fullKey}"`
-    console.log(message)
-    return Promise.reject(new Error(message))
+  if (!localStorage[fullKey]) {
+    return Promise.reject(new Error(`storage : found no matching key "${fullKey}"`))
   }
   try {
-    data = JSON.parse(data)
-    return Promise.resolve(data)
+    return Promise.resolve(JSON.parse(localStorage[fullKey]))
   } catch (e) {
-    console.error(e)
     return Promise.reject(e)
   }
 }
