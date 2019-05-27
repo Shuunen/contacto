@@ -34,7 +34,7 @@ export default {
   data () {
     return {
       columns: pkg.config.columns,
-      lines: []
+      lines: [],
     }
   },
   created () {
@@ -44,8 +44,8 @@ export default {
     async onFileLoaded (file) {
       this.lines = await csv.parse(file.content)
       // console.log('table : line', this.lines)
-    }
-  }
+    },
+  },
 }
 </script>
 

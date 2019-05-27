@@ -14,7 +14,7 @@ export default {
   data () {
     return {
       fileLoaded: null,
-      visible: false
+      visible: false,
     }
   },
   created () {
@@ -40,7 +40,7 @@ export default {
     },
     exportFile () {
       console.log('file : export')
-    }
-  }
+    },
+  },
 }
 </script>

@@ -1,21 +1,14 @@
+const rules = require('./.eslintrc.rules')
+
 module.exports = {
-  root: true,
-  env: {
-    node: true,
-    browser: true
-  },
   extends: [
     'plugin:compat/recommended',
     'plugin:vue/recommended',
     'eslint:recommended',
-    'standard'
+    'standard',
   ],
+  rules,
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
-  rules: {
-    'no-console': 'off',
-    'vue/max-attributes-per-line': 'off',
-    'vue/singleline-html-element-content-newline': 'off'
-  }
 }

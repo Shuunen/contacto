@@ -15,9 +15,9 @@ export default {
   data () {
     return {
       title: pkg.displayName,
-      description: pkg.description
+      description: pkg.description,
     }
-  }
+  },
 }
 </script>
 

@@ -20,7 +20,7 @@ export default {
   components: {
     FileHandler,
     Header,
-    TableEditor
+    TableEditor,
   },
   mounted () {
     this.checkSavedFile()
@@ -32,8 +32,8 @@ export default {
         .get('file')
         .then(data => eventBus.$emit('file-read', data))
         .catch(() => console.log('app : no previousky saved file found'))
-    }
-  }
+    },
+  },
 }
 </script>
 
