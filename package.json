@@ -2,6 +2,7 @@
   "author": "Romain Racamier-Lafon <romain.racamier@gmail.com>",
   "bugs": "https://github.com/Shuunen/contacto/issues",
   "config": {
+    "title": "Contacto",
     "columns": [
       "Given Name",
       "Family Name",
@@ -31,7 +32,10 @@
     "eslint-plugin-vue": "5.2.2",
     "npm-run-all": "4.1.5"
   },
-  "displayName": "Contacto",
+  "files": [
+    "src/",
+    "public/"
+  ],
   "homepage": "https://github.com/Shuunen/contacto",
   "keywords": [
     "vue",
@@ -43,6 +47,7 @@
   ],
   "license": "GPL-3.0",
   "name": "@shuunen/contacto",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/Shuunen/contacto.git"
@@ -52,6 +57,7 @@
     "check": "npx repo-check",
     "dev": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
+    "start": "npm run dev",
     "test": "run-s check lint build",
     "update": "npx npm-check-updates -u"
   },

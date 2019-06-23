@@ -14,7 +14,7 @@ import pkg from '../../package.json'
 export default {
   data () {
     return {
-      title: pkg.displayName,
+      title: pkg.config.title,
       description: pkg.description,
     }
   },
