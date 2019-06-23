@@ -2,11 +2,11 @@
 
 [![GitHub license](https://img.shields.io/github/license/shuunen/contacto.svg?color=informational)](https://github.com/Shuunen/contacto/blob/master/LICENSE)
 
-[![Travis (.org)](https://img.shields.io/travis/shuunen/contacto.svg)](https://travis-ci.org/Shuunen/contacto)
+[![Build Status](https://travis-ci.org/Shuunen/contacto.svg?branch=master)](https://travis-ci.org/Shuunen/contacto)
 [![David](https://img.shields.io/david/shuunen/contacto.svg)](https://david-dm.org/shuunen/contacto)
 [![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade/shuunen-contacto.netlify.com.svg?publish)](https://observatory.mozilla.org/analyze/shuunen-contacto.netlify.com)
 [![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/Shuunen/contacto.svg)](https://lgtm.com/projects/g/Shuunen/contacto/)
-[![Website](https://img.shields.io/website/https/shuunen-contacto.netlify.com.svg)](https://shuunen-contacto.netlify.com)
+[![Website Up](https://img.shields.io/website/https/shuunen-contacto.netlify.com.svg)](https://shuunen-contacto.netlify.com)
 [![BCH compliance](https://bettercodehub.com/edge/badge/Shuunen/contacto?branch=master)](https://bettercodehub.com/)
 
 > Manage your Google contacts with ease
@@ -27,10 +27,7 @@ npm run test  # Run your tests
 npm run lint  # Lints and fixes files
 ```
 
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
 ## Thanks
 
 - [icons8](https://icons8.com) : for the logo
+- [Travis-ci.org](https://travis-ci.org) : for providing free continuous deployments
