@@ -11,9 +11,9 @@
     ]
   },
   "dependencies": {
-    "@vue/cli-plugin-babel": "3.10.0",
-    "@vue/cli-plugin-eslint": "3.10.0",
-    "@vue/cli-service": "3.10.0",
+    "@vue/cli-plugin-babel": "3.11.0",
+    "@vue/cli-plugin-eslint": "3.11.0",
+    "@vue/cli-service": "3.11.0",
     "core-js": "3.2.1",
     "fast-csv": "2.5.0",
     "vue": "2.6.10",
