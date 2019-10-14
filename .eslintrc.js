@@ -1,11 +1,13 @@
 const rules = require('./.eslintrc.rules')
 
 module.exports = {
+  root: true,
+  env: {
+    node: true
+  },
   extends: [
-    'plugin:compat/recommended',
     'plugin:vue/recommended',
-    'eslint:recommended',
-    'standard',
+    '@vue/standard',
   ],
   rules,
   parserOptions: {
