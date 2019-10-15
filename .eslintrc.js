@@ -3,7 +3,7 @@ const rules = require('./.eslintrc.rules')
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
   },
   extends: [
     'plugin:vue/recommended',
