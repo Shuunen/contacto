@@ -11,7 +11,7 @@
     "title": "Contacto"
   },
   "dependencies": {
-    "fast-csv": "3.4.0",
+    "fast-csv": "3.7.0",
     "vue": "2.6.10"
   },
   "description": "Contact cleaning made easy",
