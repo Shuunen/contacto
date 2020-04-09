@@ -11,6 +11,6 @@ module.exports = {
   ],
   rules,
   parserOptions: {
-    parser: 'babel-eslint',
+    ecmaVersion: 2020
   },
 }
