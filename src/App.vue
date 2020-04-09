@@ -9,11 +9,10 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import FileHandler from './components/FileHandler.vue'
-import TableEditor from './components/TableEditor.vue'
-import * as storage from './storage'
-import eventBus from './event-bus'
+import Header from '@/components/Header.vue'
+import FileHandler from '@/components/FileHandler.vue'
+import TableEditor from '@/components/TableEditor.vue'
+import { storage, eventBus } from '@/utils'
 
 export default {
   name: 'App',
@@ -26,12 +25,11 @@ export default {
     this.checkSavedFile()
   },
   methods: {
-    checkSavedFile () {
+    async checkSavedFile () {
       console.log('app : checking for saved file')
-      storage
-        .get('file')
-        .then(data => eventBus.$emit('file-read', data))
-        .catch(() => console.log('app : no previousky saved file found'))
+      const data = await storage.get('file')
+      if (!data) return console.log('app : no previousky saved file found')
+      eventBus.$emit('file-read', data)
     },
   },
 }

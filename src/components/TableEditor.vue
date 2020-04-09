@@ -26,9 +26,8 @@
 </template>
 
 <script>
-import pkg from '../../package.json'
-import * as csv from '../csv'
-import eventBus from '../event-bus'
+import pkg from '@/../package.json'
+import { eventBus, parse } from '@/utils'
 
 export default {
   data () {
@@ -42,7 +41,7 @@ export default {
   },
   methods: {
     async onFileLoaded (file) {
-      this.lines = await csv.parse(file.content)
+      this.lines = await parse(file.content)
       // console.log('table : line', this.lines)
     },
   },

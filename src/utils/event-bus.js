@@ -1,11 +1,9 @@
 import Vue from 'vue'
-import * as storage from './storage'
+import { storage } from '.'
 
-const eventBus = new Vue()
+export const eventBus = new Vue()
 
 eventBus.$on('file-read', (data) => {
   console.log('bus : saving file content to LS')
   storage.set('file', data)
 })
-
-export default eventBus
