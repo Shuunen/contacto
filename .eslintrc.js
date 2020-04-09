@@ -11,6 +11,6 @@ module.exports = {
   ],
   rules,
   parserOptions: {
-    ecmaVersion: 2020
+    ecmaVersion: 2020,
   },
 }
