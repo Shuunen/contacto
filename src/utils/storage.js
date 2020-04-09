@@ -1,4 +1,6 @@
-const target = (typeof localStorage !== 'undefined') ? localStorage : {}
+let target = {}
+/* istanbul ignore if  */
+if (typeof localStorage !== 'undefined') target = localStorage
 
 class Storage {
   async get (key) {
@@ -14,7 +16,7 @@ class Storage {
   }
 
   async has (key) {
-    return this.get(key).then(value => !!value).catch(() => false)
+    return this.get(key).then(value => !!value)
   }
 }
 

@@ -1,5 +1,5 @@
 module.exports = {
-  exclude: ['**/index.js'],
+  exclude: ['**/index.js', 'tests/**'],
   'check-coverage': true,
   branches: 90,
   functions: 90,
