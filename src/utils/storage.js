@@ -1,4 +1,4 @@
-const target = localStorage
+const target = (typeof localStorage !== 'undefined') ? localStorage : {}
 
 class Storage {
   async get (key) {
@@ -13,7 +13,7 @@ class Storage {
     return data
   }
 
-  async as (key) {
+  async has (key) {
     return this.get(key).then(value => !!value).catch(() => false)
   }
 }
