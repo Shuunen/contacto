@@ -54,13 +54,14 @@
     "build": "vue-cli-service build",
     "build:report": "vue-cli-service build --report",
     "check": "repo-check",
-    "ci": "run-s check lint build test",
+    "ci": "run-s lint build check test",
     "dev": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "postversion": "git push && git push --tags",
     "preversion": "npm run ci",
     "start": "npm run dev",
     "test": "nyc ava",
+    "test:watch": "ava --watch",
     "update": "npx npm-check-updates -u"
   },
   "version": "0.1.0"
