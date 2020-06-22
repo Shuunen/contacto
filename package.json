@@ -12,8 +12,8 @@
   },
   "description": "Contact cleaning made easy",
   "devDependencies": {
-    "@vue/cli-plugin-eslint": "4.4.4",
-    "@vue/cli-service": "4.4.4",
+    "@vue/cli-plugin-eslint": "4.4.5",
+    "@vue/cli-service": "4.4.5",
     "@vue/eslint-config-standard": "5.1.2",
     "ava": "3.9.0",
     "eslint": "7.3.0",
