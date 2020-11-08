@@ -16,6 +16,7 @@ module.exports = {
     ecmaVersion: 2020,
   },
   plugins: [
+    'html',
     'unicorn',
   ],
 }
