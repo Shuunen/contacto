@@ -29,5 +29,15 @@ npm run lint  # Lints and fixes files
 
 ## Thanks
 
-- [design.dev](https://design.dev/downloads/21-covid-19-icons/) : for the logo
+- [Ava](https://github.com/avajs/ava) : great test runner easy to setup & use
+- [Design.dev](https://design.dev/downloads/21-covid-19-icons/) : for the logo
+- [Favicon.io](https://favicon.io/) : handy favicon converter
+- [Github](https://github.com) : this great, free and evolving platform
+- [Netlify](https://netlify.com) : awesome company that offers hosting for OSS
+- [Npm-run-all](https://github.com/mysticatea/npm-run-all) : to keep my npm scripts clean & readable
+- [Nyc](https://github.com/istanbuljs/nyc) : [Istanbul](https://istanbul.js.org/) cli also easy to setup & use with ava
+- [Repo-checker](https://github.com/Shuunen/repo-checker) : personal tool to keep every repo clean
+- [RIOT Optimizer](https://riot-optimizer.com) : Radical Image Optimization Tool, the best software I found to compress images
+- [Shields.io](https://shields.io) : nice looking badges to be proud of
+- [SvgOmg](https://jakearchibald.github.io/svgomg/) : the great king of svg file size reduction
 - [Travis-ci.org](https://travis-ci.org) : for providing free continuous deployments
