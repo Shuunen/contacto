@@ -42,7 +42,8 @@ export default {
   methods: {
     async onFileLoaded (file) {
       this.lines = await parse(file.content)
-      // console.log('table : line', this.lines)
+      console.log('table : found', this.lines.length, 'line(s)')
+      eventBus.$emit('nb-lines', this.lines.length)
     },
   },
 }

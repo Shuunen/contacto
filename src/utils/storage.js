@@ -6,7 +6,6 @@ class Storage {
   async get (key) {
     const data = target[key]
     if (!data) return
-    console.log('found data :', data)
     return (data[0] === '{') ? JSON.parse(data) : data
   }
 
