@@ -1,6 +1,6 @@
 <template>
   <div class="header line margin-bottom">
-    <img class="header--logo margin-right" alt="contacto logo" height="64" width="64" src="../assets/icons8-clean-64.png">
+    <img class="header--logo margin-right" alt="contacto logo" src="../assets/logo.svg">
     <div class="col">
       <h1 class="header--title">{{ title }}</h1>
       <h2 class="header--subtitle">{{ description }}</h2>

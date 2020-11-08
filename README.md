@@ -29,5 +29,5 @@ npm run lint  # Lints and fixes files
 
 ## Thanks
 
-- [icons8](https://icons8.com) : for the logo
+- [design.dev](https://design.dev/downloads/21-covid-19-icons/) : for the logo
 - [Travis-ci.org](https://travis-ci.org) : for providing free continuous deployments
