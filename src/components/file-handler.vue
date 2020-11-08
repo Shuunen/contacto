@@ -13,7 +13,7 @@ import { eventBus } from '@/utils'
 export default {
   data () {
     return {
-      fileLoaded: null,
+      fileLoaded: undefined,
       visible: false,
     }
   },
@@ -24,7 +24,7 @@ export default {
     loadTextFile (file) {
       var reader = new FileReader()
       console.log('file : reading', file)
-      reader.onload = event => eventBus.$emit('file-read', { name: file.name, content: event.target.result })
+      reader.addEventListener('load', event => eventBus.$emit('file-read', { name: file.name, content: event.target.result }))
       reader.readAsText(file)
     },
     selectFile () {

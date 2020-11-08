@@ -7,6 +7,7 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:unicorn/recommended',
     'plugin:vue/recommended',
     '@vue/standard',
   ],
@@ -14,4 +15,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
   },
+  plugins: [
+    'unicorn',
+  ],
 }

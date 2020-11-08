@@ -5,7 +5,7 @@ if (typeof localStorage !== 'undefined') target = localStorage
 class Storage {
   async get (key) {
     const data = target[key]
-    if (!data) return null
+    if (!data) return
     console.log('found data :', data)
     return (data[0] === '{') ? JSON.parse(data) : data
   }

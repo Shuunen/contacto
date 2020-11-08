@@ -9,13 +9,12 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import FileHandler from '@/components/FileHandler.vue'
-import TableEditor from '@/components/TableEditor.vue'
+import Header from '@/components/header.vue'
+import FileHandler from '@/components/file-handler.vue'
+import TableEditor from '@/components/table-editor.vue'
 import { storage, eventBus } from '@/utils'
 
 export default {
-  name: 'App',
   components: {
     FileHandler,
     Header,
