@@ -27,7 +27,7 @@
 
 <script>
 import pkg from '@/../package.json'
-import { eventBus, parse } from '@/utils'
+import { eventBus, parse, generate } from '@/utils'
 
 export default {
   data () {
@@ -38,6 +38,7 @@ export default {
   },
   created () {
     eventBus.$on('file-read', data => this.onFileLoaded(data))
+    eventBus.$on('export-to-csv', () => generate(this.lines))
   },
   methods: {
     async onFileLoaded (file) {

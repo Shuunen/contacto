@@ -1,5 +1,5 @@
 import test from 'ava'
-import { parse } from '../src/utils'
+import { generate, googleCols, parse } from '../src/utils'
 
 test('parse valid csv', async t => {
   const result = await parse('header a,header b\nline a,line b')
@@ -10,4 +10,11 @@ test('parse valid csv', async t => {
 test('parse invalid csv', async t => {
   const error = await t.throwsAsync(parse('header a;header b\nline a,line b,,'))
   t.is(error.message, 'Unexpected Error: column header mismatch expected: 1 columns got: 4')
+})
+
+test('generate Google csv', t => {
+  const lines = [{ Name: 'John Doe' }]
+  const expected = googleCols.join(',') + '\n' + 'John Doe' + ','.repeat(googleCols.length - 1)
+  const generated = generate(lines)
+  t.is(generated, expected)
 })
