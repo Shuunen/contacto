@@ -42,7 +42,8 @@ export default {
   color: var(--color-black);
   padding: 20px;
   font-size: 16px;
-  --color-primary: royalblue;
+  --color-primary: royalblue; /* #4169e1 */
+  --color-secondary: #f2f2fc;
   --color-black: #333;
   --color-white: #f2f2f2;
   --color-grey: grey;
@@ -60,6 +61,10 @@ export default {
 
 .line .push-right {
   margin-left: auto;
+}
+
+.push-bottom {
+  margin-top: auto;
 }
 
 .col {
@@ -87,10 +92,9 @@ export default {
   font-size: 1.4rem;
 }
 
-.padding,
 .input,
 .button {
-  padding: 0.2rem 0.5rem;
+  padding: .4rem .5rem .2rem;
 }
 
 .margin {

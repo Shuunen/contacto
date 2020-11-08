@@ -1,9 +1,11 @@
 <template>
   <div class="line">
-    <p v-if="fileLoaded" class="margin-right font-size color">{{ status }}</p>
-    <input ref="input" class="hidden" type="file" accept=".csv" @change="onFileSelection">
-    <button class="button margin-right" @click="selectFile">Open {{ fileLoaded ? 'another ' : '' }} file</button>
-    <button class="button" @click="exportFile">Export to CSV</button>
+    <p v-if="fileLoaded" class="margin-right font-size push-bottom">{{ status }}</p>
+    <div class="col">
+      <input ref="input" class="hidden" type="file" accept=".csv" @change="onFileSelection">
+      <button class="button" style="margin-bottom: .4rem" @click="selectFile">Open {{ fileLoaded ? 'another ' : '' }} file</button>
+      <button class="button" @click="exportFile">Export to CSV</button>
+    </div>
   </div>
 </template>
 

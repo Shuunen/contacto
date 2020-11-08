@@ -10,7 +10,7 @@
     ],
     "title": "Contacto"
   },
-  "description": "Contact cleaning made easy",
+  "description": "Contact cleaning made easy.",
   "devDependencies": {
     "@vue/cli-plugin-eslint": "4.5.8",
     "@vue/cli-service": "4.5.8",

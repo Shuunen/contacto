@@ -28,4 +28,12 @@ export default {
   margin-top: 0;
   margin-bottom: 0;
 }
+.header--title {
+  font-size: 3rem;
+  letter-spacing: -1px;
+}
+.header--subtitle {
+  color: var(--color-grey);
+  margin-left: 0.2rem;
+}
 </style>

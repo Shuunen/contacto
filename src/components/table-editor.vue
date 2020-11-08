@@ -61,23 +61,32 @@ export default {
   white-space: nowrap;
 }
 
+.table tbody > tr > td:first-child {
+padding-left: .7rem;
+}
+
 .table tbody > tr:last-child > td {
   border-bottom-width: 0;
+}
+
+.table th {
+  padding: .7rem 1rem .5rem .6rem;
+  font-size: 1.1rem;
+  letter-spacing: .1rem;
 }
 
 .table td {
   background-color: transparent;
   border-bottom: 1px solid var(--color-lightgrey);
+  padding: .3rem;
 }
 
 .table td,
 .table th {
   border-bottom: 1px solid var(--color-lightgrey);
   border-left: 1px solid var(--color-lightgrey);
-  font-size: inherit;
   margin: 0;
   overflow: visible;
-  padding: 0.5em 1em;
   font-weight: normal;
 }
 
@@ -93,8 +102,13 @@ export default {
   vertical-align: bottom;
 }
 
+.table tbody > tr:hover td,
+.table tbody > tr:hover td input {
+  font-weight: bold;
+}
+
 .table tr:nth-child(2n-1) td {
-  background-color: var(--color-white);
+  background-color: var(--color-secondary);
 }
 
 .name {
