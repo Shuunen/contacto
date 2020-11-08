@@ -38,7 +38,7 @@ export default {
   },
   created () {
     eventBus.$on('file-read', data => this.onFileLoaded(data))
-    eventBus.$on('export-to-csv', () => generate(this.lines))
+    eventBus.$on('export-to-csv', () => generate(this.columns, this.lines))
   },
   methods: {
     async onFileLoaded (file) {
