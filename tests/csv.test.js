@@ -20,3 +20,11 @@ test('generate csv', t => {
   const generated = generate(columns, lines)
   t.is(generated, expected)
 })
+
+test('generate csv with a comma inside a field', t => {
+  const columns = package_.config.columns
+  const lines = [{ 'Given Name': 'John, Doe' }]
+  const expected = columns.join(',') + '\n' + '"John, Doe"' + ','.repeat(columns.length - 1)
+  const generated = generate(columns, lines)
+  t.is(generated, expected)
+})
