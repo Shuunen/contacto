@@ -31,6 +31,7 @@ npm run lint  # Lints and fixes files
 
 - [Ava](https://github.com/avajs/ava) : great test runner easy to setup & use
 - [Design.dev](https://design.dev/downloads/21-covid-19-icons/) : for the logo
+- [Eslint](https://eslint.org) : super tool to find & fix problems
 - [Favicon.io](https://favicon.io/) : handy favicon converter
 - [Github](https://github.com) : this great, free and evolving platform
 - [Netlify](https://netlify.com) : awesome company that offers hosting for OSS
@@ -41,3 +42,4 @@ npm run lint  # Lints and fixes files
 - [Shields.io](https://shields.io) : nice looking badges to be proud of
 - [SvgOmg](https://jakearchibald.github.io/svgomg/) : the great king of svg file size reduction
 - [Travis-ci.org](https://travis-ci.org) : for providing free continuous deployments
+- [Vue](https://vuejs.org) : when I need a front framework, this is the one I choose <3
