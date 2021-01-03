@@ -2,7 +2,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/shuunen/contacto.svg?color=informational)](https://github.com/Shuunen/contacto/blob/master/LICENSE)
 
-[![Build Status](https://travis-ci.org/Shuunen/contacto.svg?branch=master)](https://travis-ci.org/Shuunen/contacto)
+[![Build Status](https://travis-ci.com/Shuunen/contacto.svg?branch=master)](https://travis-ci.com/Shuunen/contacto)
 [![David](https://img.shields.io/david/shuunen/contacto.svg)](https://david-dm.org/shuunen/contacto)
 [![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade/shuunen-contacto.netlify.app.svg?publish)](https://observatory.mozilla.org/analyze/shuunen-contacto.netlify.app)
 [![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/Shuunen/contacto.svg)](https://lgtm.com/projects/g/Shuunen/contacto/)
@@ -41,5 +41,5 @@ npm run lint  # Lints and fixes files
 - [RIOT Optimizer](https://riot-optimizer.com) : Radical Image Optimization Tool, the best software I found to compress images
 - [Shields.io](https://shields.io) : nice looking badges to be proud of
 - [SvgOmg](https://jakearchibald.github.io/svgomg/) : the great king of svg file size reduction
-- [Travis-ci.org](https://travis-ci.org) : for providing free continuous deployments
+- [travis-ci.com](https://travis-ci.com) : for providing free continuous deployments
 - [Vue](https://vuejs.org) : when I need a front framework, this is the one I choose <3
