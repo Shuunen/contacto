@@ -41,5 +41,5 @@ npm run lint  # Lints and fixes files
 - [RIOT Optimizer](https://riot-optimizer.com) : Radical Image Optimization Tool, the best software I found to compress images
 - [Shields.io](https://shields.io) : nice looking badges to be proud of
 - [SvgOmg](https://jakearchibald.github.io/svgomg/) : the great king of svg file size reduction
-- [travis-ci.com](https://travis-ci.com) : for providing free continuous deployments
+- [Travis-ci.com](https://travis-ci.com) : for providing free continuous deployments
 - [Vue](https://vuejs.org) : when I need a front framework, this is the one I choose <3
