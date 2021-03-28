@@ -14,7 +14,7 @@
   "devDependencies": {
     "@vue/cli-service": "4.5.12",
     "fast-csv": "4.3.6",
-    "shuunen-stack": "0.4.1",
+    "shuunen-stack": "latest",
     "vue": "2.6.12",
     "vue-template-compiler": "2.6.12"
   },
