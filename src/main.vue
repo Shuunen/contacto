@@ -84,7 +84,7 @@ export default {
 
 .border-radius,
 .button {
-  border-radius: 0.4rem;
+  border-radius: .4rem;
 }
 
 .font-size,
@@ -131,7 +131,7 @@ p {
 .input {
   border-color: var(--color-lightgrey);
   border-style: solid;
-  border-width: 0.05rem;
+  border-width: .05rem;
   font-size: inherit;
 }
 </style>

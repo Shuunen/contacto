@@ -3,7 +3,7 @@
     <table class="table">
       <thead>
         <tr>
-          <th style="width:200px">
+          <th>
             <div class="ellipsis">Name</div>
           </th>
           <th v-for="column in columns" :key="column">
@@ -12,12 +12,12 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(line, index) in lines" :key="'line-'+index">
+        <tr v-for="(line, index) in lines" :key="'line-' + index">
           <td>
             <div class="name ellipsis">{{ line.Name }}</div>
           </td>
           <td v-for="column in columns" :key="column">
-            <input v-model="line[column]" class="input">
+            <input v-model="line[column]" class="input" />
           </td>
         </tr>
       </tbody>
@@ -61,18 +61,18 @@ export default {
   white-space: nowrap;
 }
 
-.table tbody > tr > td:first-child {
-padding-left: .7rem;
-}
-
-.table tbody > tr:last-child > td {
-  border-bottom-width: 0;
-}
-
 .table th {
   padding: .7rem 1rem .5rem .6rem;
   font-size: 1.1rem;
   letter-spacing: .1rem;
+}
+
+.table td, .table th {
+  border-bottom: 1px solid var(--color-lightgrey);
+  border-left: 1px solid var(--color-lightgrey);
+  margin: 0;
+  overflow: visible;
+  font-weight: normal;
 }
 
 .table td {
@@ -81,18 +81,21 @@ padding-left: .7rem;
   padding: .3rem;
 }
 
-.table td,
-.table th {
-  border-bottom: 1px solid var(--color-lightgrey);
-  border-left: 1px solid var(--color-lightgrey);
-  margin: 0;
-  overflow: visible;
-  font-weight: normal;
-}
-
 .table td:first-child,
 .table th:first-child {
   border-left-width: 0;
+}
+
+.table tr:nth-child(2n-1) td {
+  background-color: var(--color-secondary);
+}
+
+.table tbody > tr > td:first-child {
+  padding-left: .7rem;
+}
+
+.table tbody > tr:last-child > td {
+  border-bottom-width: 0;
 }
 
 .table thead {
@@ -105,10 +108,6 @@ padding-left: .7rem;
 .table tbody > tr:hover td,
 .table tbody > tr:hover td input {
   font-weight: bold;
-}
-
-.table tr:nth-child(2n-1) td {
-  background-color: var(--color-secondary);
 }
 
 .name {

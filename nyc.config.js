@@ -1,4 +1,5 @@
 module.exports = {
+  reporter: ['text', 'lcovonly'],
   exclude: ['**/index.js', 'tests/**'],
   'check-coverage': true,
   branches: 90,
