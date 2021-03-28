@@ -1,7 +1,7 @@
-import * as csv from 'fast-csv'
-import 'setimmediate'
+const csv = require('fast-csv')
+require('setimmediate') // eslint-disable-line import/no-unassigned-import
 
-export const parse = (text) => new Promise((resolve, reject) => {
+exports.parse = text => new Promise((resolve, reject) => {
   const lines = []
   const stream = csv.parse({ headers: true })
   stream.on('error', error => reject(error))
@@ -20,7 +20,7 @@ const generateLine = (columns, line) => {
   })
 }
 
-export const generate = (columns, lines) => {
+exports.generate = (columns, lines) => {
   console.log('generate csv from lines :', lines)
   let csv = columns.join(',')
   csv += '\n' + lines.map(line => generateLine(columns, line)).join('\n')

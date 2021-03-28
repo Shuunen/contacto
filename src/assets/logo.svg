@@ -3,8 +3,8 @@
   <defs/>
   <defs>
     <style>
-      .accent{fill:royalblue}
-      .bottle{fill:#f2f2fc}
+      .accent { fill: royalblue; }
+      .bottle { fill: #f2f2fc; }
     </style>
   </defs>
   <path fill="lavender" fill-rule="evenodd" d="M6.8 14.8c-.1 3.8-.2 5.6-2 7.6-1.2 1.3-1.6 2-1.6 4.6v14.3A2 2 0 005 43.2h12.7a1.7 1.7 0 001.9-2V27.9a5.2 5.2 0 00-3.1-4.2c-3.4-1.7-3.9-4.2-3.8-8.8h.1a.4.4 0 00.4-.3v-3.6a.4.4 0 00-.4-.4h-.5V7.7l2.9-1a5.8 5.8 0 005.7 5.7c-2.2-2.4-2.9-4-2.8-6.8l3-1h2.6V1.3H7.6c-2.7 0-6 3.3-6.2 5.1h4.2C6.6 6.5 7 7 7 8v2.5h-.4a.4.4 0 00-.4.4v3.6a.4.4 0 00.4.3z"/>

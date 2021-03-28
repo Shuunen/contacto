@@ -2,8 +2,8 @@
   <div class="line">
     <p v-if="fileLoaded" class="margin-right font-size push-bottom">{{ status }}</p>
     <div class="col">
-      <input ref="input" class="hidden" type="file" accept=".csv" @change="onFileSelection">
-      <button class="button" style="margin-bottom: .4rem" @click="selectFile">Open {{ fileLoaded ? 'another ' : '' }} file</button>
+      <input ref="input" class="hidden" type="file" accept=".csv" @change="onFileSelection" />
+      <button class="button" @click="selectFile">Open {{ fileLoaded ? "another " : "" }} file</button>
       <button class="button" @click="exportFile">Export to CSV</button>
     </div>
   </div>
@@ -56,3 +56,9 @@ export default {
   },
 }
 </script>
+
+<style>
+.col > .button + .button {
+  margin-top: 1rem;
+}
+</style>
