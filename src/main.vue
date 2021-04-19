@@ -5,6 +5,7 @@
       <FileHandler class="push-right" />
     </div>
     <TableEditor />
+    <About />
   </div>
 </template>
 
@@ -12,10 +13,12 @@
 import Header from '@/components/header.vue'
 import FileHandler from '@/components/file-handler.vue'
 import TableEditor from '@/components/table-editor.vue'
+import About from '@/components/about.vue'
 import { storage, eventBus } from '@/utils'
 
 export default {
   components: {
+    About,
     FileHandler,
     Header,
     TableEditor,
