@@ -44,7 +44,7 @@
     "dev": "vue-cli-service serve",
     "lint": "stack lint",
     "postversion": "git push && git push --tags",
-    "preversion": "npm run ci",
+    "preversion": "npm run lint && npm run build && npm run test",
     "start": "npm run dev",
     "test": "stack test",
     "test:watch": "stack test --watch",
