@@ -12,7 +12,7 @@
   },
   "description": "Contact cleaning made easy.",
   "devDependencies": {
-    "@vue/cli-service": "4.5.12",
+    "@vue/cli-service": "4.5.13",
     "fast-csv": "4.3.6",
     "shuunen-stack": "latest",
     "vue": "2.6.12",
